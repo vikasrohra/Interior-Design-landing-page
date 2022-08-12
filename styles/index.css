@@ -22,6 +22,14 @@ body {
   align-items: center;
 }
 
+.nav-menu-icon {
+  display: none;
+}
+
+.list-items {
+  display: block;
+}
+
 .list-items {
   list-style-type: none;
   flex: 1;
@@ -153,4 +161,125 @@ body {
   border-radius: 40px;
   border: none;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    height: auto;
+    background-image: url('../images/backcover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 20px 20px 0 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu-icon {
+    display: block;
+    color: #ffffff;
+  }
+  
+  .list-items {
+    display: none;
+  }  
+
+  .brand-logo img {
+    height: 35px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0 0;
+  }
+
+  .section-left {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .main-header {
+    font-size: 40px;
+    color: #ffffff;
+    width: 100%;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+  
+  .learn-more {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    background: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .top-div {
+    width: 90%;
+    padding: 25px 10px 25px 25px;
+    opacity: 0.5;
+    background-color: #304556;
+    color: #ffffff;
+    position: static;
+    right: auto;
+    bottom: auto;
+    margin-bottom: 50px;
+  }
+  
+  .vertical {
+    display: none;
+  }
+  
+  .vertical-circle {
+    display: none;
+  }
+  
+  .top-div button {
+    padding: 8px 30px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .bottom-div {
+    width: 90%;
+    padding: 25px 10px 25px 25px;
+    opacity: 0.5;
+    background-color: #304556;
+    color: #ffffff;
+    position: static;
+    right: auto;
+    top: auto;
+  }
+  
+  .horizontal {
+    display: none;
+  }
+  
+  .horizontal-circle {
+    display: none;
+  }
+  
+  .bottom-div button {
+    padding: 8px 30px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 10px;
+  }
 }
